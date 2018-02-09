@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+<!-- c2s 客户端到服务器请求 -->
+<!-- s2c 服务器客到户端推送 -->
+<protocol> 
+<custom_type>
+<type name="p_value" desc="部分数据">
+    <f t="uint8" name="key" desc="类型"/>
+    <loop t="uint32" name="value" desc="值"/>
+</type>
+<type name="p_role" desc="角色信息">
+    <f t="uint32" name="id" desc="角色id"/>
+    <f t="string" name="name" desc="角色名称"/>
+    <f t="string" name="icon" desc="头像链接"/>
+    <f t="uint32" name="diam" desc="钻石"/>
+    <f t="uint32" name="gold" desc="金币"/>
+    <f t="uint8" name="is_gm" desc="gm == 1"/>
+    <f t="uint8" name="sex" desc="性别"/>
+</type>
+<type name="p_simple_role" desc="个人角色信息（展示用）">
+    <f t="uint32" name="id" desc="角色id"/>
+    <f t="string" name="name" desc="角色名称"/>
+    <f t="string" name="icon" desc="头像链接"/>
+    <f t="uint8" name="sex" desc="性别"/>
+</type>
+<type name="p_room_role" desc="房间个人角色信息">
+    <f t="p_simple_role" name="role" desc="角色"/>
+    <f t="uint8" name="place" desc="位置 0 ~3 "/>
+    <f t="uint8" name="role_state" desc="个人状态0空闲 1准备"/>
+    <f t="bool" name="is_room_owner" desc="是否房主"/>
+	<f t="uint32" name="longitude" desc="经度 * 10000"/>
+	<f t="uint32" name="latitude" desc="纬度 * 10000"/>
+	<f t="uint16" name="credit" desc="信用度"/>
+	<f t="string" name="ip_addr" desc="ip地址"/>
+</type>
+<type name="p_room_xlmj_data" desc="血流麻将房间内具体数据">
+    <f t="uint32" name="room_uid" desc="房间uid"/>
+    <f t="uint32" name="room_type" desc="房间玩法 "/>
+    <loop t="p_room_role" name="role_list" desc="玩家列表"/>
+    <f t="uint8" name="room_state" desc="房间状态 1准备 2开始 3 结束"/>
+    <f t="uint8" name="cur_play_count" desc="玩第几次"/>
+	<f t="uint8" name="piao" desc="漂1：1，2：2，3：3，5：5"/>
+	<f t="uint8" name="play_count" desc="局数 3,4,6,8"/>
+	<f t="uint8" name="play_type" desc="1:换三张; 2:甩三张; 3:先换后甩"/>
+	<f t="uint32" name="owner_id" desc="房主id "/>
+</type>
+<type name="p_room_data" desc="房间通用简单数据，外面大厅显示用的">
+    <f t="uint32" name="room_uid" desc="房间uid"/>
+    <f t="uint32" name="room_type" desc="房间玩法 "/>
+    <loop t="p_simple_role" name="role_list" desc="玩家列表"/>
+    <f t="uint8" name="room_state" desc="房间状态 1准备 2开始 3 结束"/>
+    <f t="uint8" name="cur_play_count" desc="玩第几局"/>
+</type>
+<type name="p_guild_member" desc="公会玩家信息">
+    <f t="uint32" name="id" desc="玩家id"/>
+    <f t="string" name="name" desc="玩家名字"/>
+    <f t="uint8" name="sex" desc="性别"/>
+    <f t="uint8" name="lvl" desc="等级"/>
+    <f t="uint8" name="position" desc="在公会的职位0普通会员 1会长 2~其他"/>
+    <f t="uint32" name="last_logout_time" desc="上次登出时间"/>
+	<f t="string" name="icon" desc="头像"/>
+	<f t="uint32" name="credit" desc="信用"/>
+</type>
+<type name="p_guild_apply_member" desc="申请公会的玩家信息">
+    <f t="uint32" name="id" desc="玩家id"/>
+    <f t="string" name="name" desc="玩家名字"/>
+    <f t="uint8" name="lvl" desc="玩家等级"/>
+    <f t="uint8" name="sex" desc="玩家性别"/>
+    <f t="uint32" name="time" desc="申请时间"/>
+	<f t="string" name="icon" desc="头像"/>
+	<f t="uint32" name="credit" desc="信用"/>
+</type>
+<type name="p_guild_base" desc="公会的基本信息（用于外面公会列表使用）">
+    <f t="uint32" name="id" desc="公会id"/>
+    <f t="string" name="name" desc="公会名字"/>
+    <f t="uint32" name="owner_id" desc="会长id"/>
+    <f t="string" name="owner_name" desc="会长名字"/>
+	<f t="string" name="guild_icon" desc="公会图标 会长头像url"/>
+	<f t="string" name="announcement" desc="公会公告"/>
+</type>
+<type name="p_guild_detail" desc="公会的所有信息（用于点击进入公会后使用）">
+    <f t="uint32" name="id" desc="公会id"/>
+    <f t="string" name="name" desc="公会名字"/>
+    <f t="uint8" name="lvl" desc="公会等级"/>
+    <f t="uint32" name="rank" desc="公会排名"/>
+    <f t="uint32" name="owner_id" desc="会长id"/>
+    <f t="string" name="owner_name" desc="会长名字"/>
+    <f t="uint8" name="member_num" desc="当前人数"/>
+    <f t="uint8" name="member_max" desc="最大人数"/>
+	<f t="string" name="guild_icon" desc="公会图标 会长头像url"/>
+	<f t="string" name="announcement" desc="公会公告"/>
+	<f t="uint8" name="piao" desc="漂1：1，2：2，3：3，5：5  0:不设置"/>
+	<f t="uint8" name="play_count" desc="局数 3,4,6,8 0:不设置"/>
+	<f t="uint8" name="play_type" desc="1:换三张; 2:甩三张; 3:先换后甩  0:不设置"/>
+	<f t="uint8" name="pay_type" desc="1: 消耗会长（默认） 2。（AA消耗）"/>
+</type>
+<type name="p_guild_log" desc="公会日志">
+    <f t="string" name="name" desc="玩家名字"/>
+    <f t="uint16" name="op_type" desc="行为 1：进入公会 2：退出 3：开房并扣费"/>
+	<f t="string" name="ex_params" desc="预留额外参数"/>
+    <f t="uint32" name="time" desc="时间"/>
+</type>
+<type name="p_client_cmd" desc="客户端上交命令">
+    <f t="uint16" name="id" desc="指令id"/>
+	<loop t="uint32" name="param_list" desc="参数列表"/>
+</type>
+<type name="p_server_cmd" desc="服务器下发命令">
+    <f t="uint16" name="id" desc="指令id"/>
+	<loop t="uint32" name="param_list" desc="参数列表"/>
+	<f t="uint32" name="role_id" desc="操作的玩家id 0所有玩家"/>
+</type>
+
+<type name="p_mj_card_suit" desc="一组麻将">
+	<f t="uint8" name="card_num" desc="麻将张数"/>
+	<loop t="uint16" name="card_list" desc="麻将id"/>
+</type>
+<type name="p_xlmj_role_settlement" desc="血流麻将个人结算信息">
+    <f t="p_simple_role" name="role" desc="角色"/>
+	<f t="uint8" name="place" desc="位置 0 ~3 "/>
+	<f t="p_mj_card_suit" name="hide_card_list" desc="手牌列表"/>
+	<loop t="p_mj_card_suit" name="show_card_list" desc="碰、 杠的牌列表"/>
+	<f t="p_mj_card_suit" name="win_card_list" desc="胡的牌列表"/>
+	<f t="bool" name="is_huazhu" desc="是否花猪"/>
+	<f t="bool" name="is_dajiao" desc="是否大叫"/>
+	<f t="int16" name="cur_score" desc="当局积分"/>
+	<f t="int16" name="all_score" desc="总局积分"/>
+</type>
+<type name="p_xlmj_role_card_list" desc="玩家所有牌信息（重连的时候用）">
+    <f t="uint32" name="role_id" desc="角色id"/>
+	<f t="p_mj_card_suit" name="hide_card_list" desc="手牌列表"/>
+	<loop t="p_mj_card_suit" name="show_card_list" desc="碰、 杠的牌列表"/>
+	<f t="p_mj_card_suit" name="win_card_list" desc="胡的牌列表"/>
+	<f t="p_mj_card_suit" name="discard_card_list" desc="出牌列表"/>
+	<f t="p_mj_card_suit" name="drop_card_list" desc="甩牌列表"/>
+	<f t="p_mj_card_suit" name="exchange_card_list" desc="换出去牌列表"/>
+	<f t="p_mj_card_suit" name="get_exchange_card_list" desc="换入去牌列表"/>
+	<f t="int16" name="cur_score" desc="当局积分"/>
+	<f t="int16" name="all_score" desc="总局积分"/>
+	<f t="int16" name="que_type" desc="缺类型"/>
+</type>
+<type name="p_match_record_role" desc="战绩玩家数据">
+    <f t="p_simple_role" name="role" desc="角色"/>
+	<f t="int16" name="score" desc="总分"/>
+</type>
+<type name="p_match_record" desc="战绩总信息">
+    <f t="uint32" name="uid" desc="uid"/>
+	<f t="uint32" name="room_uid" desc="room uid"/>
+	<loop t="p_match_record_role" name="role_list" desc="对战玩家数据"/>
+	<f t="uint32" name="timestamp" desc="时间戳"/>
+	<f t="int8" name="all_play_count" desc="总局数"/>
+</type>
+<type name="p_xlmj_role_final_settlement" desc="血流麻将个人最终结算信息">
+    <f t="p_simple_role" name="role" desc="角色"/>
+	<f t="uint8" name="place" desc="位置 0 ~3 "/>
+	<f t="int16" name="all_score" desc="总局积分"/>
+	<f t="uint8" name="hu_count" desc="胡次数"/>
+	<f t="uint8" name="be_hu_count" desc="放炮次数"/>
+	<f t="uint8" name="ming_gang_count" desc="明杠次数"/>
+	<f t="uint8" name="an_gang_count" desc="暗杠次数"/>
+</type>
+<type name="p_guild_winer_log" desc="公会里面单条大赢家数据">
+    <f t="p_simple_role" name="role" desc="角色"/>
+	<f t="uint32" name="credit" desc="信用"/>
+	<f t="uint8" name="position" desc="在公会的职位0普通会员 1会长 2~其他"/>
+	<f t="uint8" name="cost_diam" desc="消耗钻石"/>
+	<f t="uint32" name="timestamp" desc="时间戳"/>
+</type>
+<type name="p_guild_daily_cost_log" desc="每日消耗数据">
+    <f t="uint32" name="cost_times" desc="消耗钻石次数"/>
+	<f t="uint8" name="cost_diam" desc="消耗钻石"/>
+	<f t="uint32" name="timestamp" desc="时间戳"/>
+</type>
+</custom_type>
+
+<section id="1" name="login" desc="登陆相关 登录流程：先发心跳包，再发login登录包， 心跳包5s发一次过来">
+<msg id="0" name="heart" desc="心跳">
+    <c2s/>
+    <s2c>
+        <f t="uint32" name="server_time" desc="服务器时间(本地时间)" />
+    </s2c>
+</msg>
+<msg id="1" name="login" desc="登陆">
+    <c2s>
+        <f t="string" name="accname" desc="用户名"/>
+        <f t="string" name="key" desc="key"/>
+        <f t="string" name="platform" desc="平台，为空则为本地开发"/>
+        <f t="string" name="token" desc="验证数据串"/>
+        <f t="uint32" name="timestamp" desc="时间戳"/>
+        <f t="string" name="name" desc="昵称"/>
+        <f t="string" name="icon" desc="头像链接"/>
+        <f t="uint8" name="sex" desc="性别"/>
+    </c2s>
+    <s2c>
+        <f t="uint16" name="code" desc="错误码"/>
+        <f t="p_role" name="login_info" desc="角色登陆信息"/>
+    </s2c>
+</msg>
+<msg id="2" name="reject" desc="服务端主动断开链接">
+    <s2c>
+        <f t="uint8" name="code" desc="断开原因"/> 
+    </s2c>
+</msg>
+<msg id="3" name="stop" desc="通知服务端将要断开">
+    <s2c>
+        <f t="uint32" name="time" desc="剩余时间（多少秒后断开服务）"/>
+    </s2c>
+</msg>
+<msg id="4" name="client_info" desc="客户端信息">
+	<c2s>
+		<f t="string" name="os" desc="操作系统mac andriod"/>
+		<f t="string" name="os_ver" desc="操作系统版本号 "/>	
+		<f t="string" name="device" desc="设备"/>
+		<f t="string" name="device_type" desc="设备类型 iphone ipad andriod"/>
+		<f t="string" name="screen" desc="屏幕分辨率"/>
+		<f t="string" name="mno" desc="移动网络运营商"/>
+		<f t="string" name="nm" desc="网络方式 3g wifi等"/>
+		<f t="string" name="platform" desc="平台"/>
+		<f t="uint32" name="serv_id" desc="服务器ID"/>
+	</c2s>	
+    <s2c>
+        <f t="uint16" name="code" desc="错误码"/> 
+    </s2c>
+</msg>
+<msg id="5" name="step" desc="加载步骤">
+	<c2s>
+		<f t="uint16" name="step" desc="加载步骤 从102开始"/>	
+	</c2s>	
+</msg>
+</section>
+
+<section id="2" name="role" desc="角色">
+<msg id="1" name="get_role_info" desc="获取用户信息">
+    <c2s>
+    </c2s>
+    <s2c>
+        <f t="uint16" name="code" desc="错误码"/>
+        <f t="p_role" name="login_info" desc="角色登陆信息"/>
+    </s2c>
+</msg>
+<msg id="2" name="diamond_num" desc="获取或者推送钻石数量">
+    <c2s>
+    </c2s>
+    <s2c>
+        <f t="uint16" name="code" desc="错误码"/>
+        <f t="uint32" name="num" desc="钻石数量"/>
+    </s2c>
+</msg>
+<msg id="3" name="gold_num" desc="获取或者推送金币数量">
+    <c2s>
+    </c2s>
+    <s2c>
+        <f t="uint16" name="code" desc="错误码"/>
+        <f t="uint32" name="num" desc="金币数量"/>
+    </s2c>
+</msg>
+<msg id="4" name="role_detail_info" desc="玩家详细信息">
+    <c2s>
+    </c2s>
+    <s2c>
+        <f t="p_role" name="role_info" desc="玩家信息"/>
+        <f t="uint32" name="match_count" desc="比赛次数"/>
+        <f t="uint32" name="win_count" desc="赢次数"/>
+        <f t="uint16" name="level" desc="等级"/>
+        <f t="uint32" name="exp" desc="经验"/>
+        <f t="uint32" name="credit" desc="信用"/>
+    </s2c>
+</msg>
+<msg id="5" name="match_history" desc="玩家战绩">
+    <c2s>
+    </c2s>
+    <s2c>
+		<f t="uint16" name="code" desc="错误码"/>
+		<loop t="p_match_record" name="match_list" desc="比赛记录"/>
+    </s2c>
+</msg>
+<msg id="6" name="match_replay_detail" desc="玩家回放具体数据">
+    <c2s>
+		 <f t="uint32" name="uid" desc="uid"/>
+    </c2s>
+    <s2c>
+		<f t="uint16" name="code" desc="错误码"/>
+		<f t="p_room_xlmj_data" name="room_data" desc="房间信息"/>
+		<loop t="p_server_cmd" name="cmd_list" desc="指令列表"/>
+    </s2c>
+</msg>
+</section>
+
+<section id="3" name="room" desc="房间通用协议">
+<msg id="1" name="enter_room" desc="输入房间号，进入房间">
+    <c2s>
+         <f t="uint32" name="room_uid" desc="房间号"/>
+		 <f t="uint32" name="longitude" desc="经度 * 10000"/>
+		 <f t="uint32" name="latitude" desc="纬度 * 10000"/>
+    </c2s>
+    <s2c>
+        <f t="uint16" name="code" desc="错误码"/>
+    </s2c>
+</msg>
+<msg id="2" name="rsp_xlmj_room" desc="房间信息返回">
+    <s2c>
+        <f t="p_room_xlmj_data" name="room_data" desc="房间数据"/>
+    </s2c>
+</msg>
+<msg id="3" name="add_room_role" desc="增加房间玩家返回">
+    <s2c>
+        <f t="p_room_role" name="add_role_data" desc="玩家返回"/>
+    </s2c>
+</msg>
+<msg id="4" name="leave_room" desc="退出房间">
+    <c2s>
+    </c2s>
+    <s2c>
+		 <f t="uint16" name="code" desc="错误码"/>
+        <f t="uint32" name="role_uid" desc="退出的玩家uid"/>
+    </s2c>
+</msg>
+<msg id="5" name="ready" desc="准备开始">
+    <c2s>
+    </c2s>
+    <s2c>
+        <f t="uint16" name="code" desc="错误码"/>
+        <f t="uint32" name="role_id" desc="准备的玩家id"/>
+    </s2c>
+</msg>
+<msg id="6" name="cancel_ready" desc="取消准备">
+    <c2s>
+    </c2s>
+    <s2c>
+        <f t="uint16" name="code" desc="错误码"/>
+        <f t="uint32" name="role_id" desc="取消准备的玩家id"/>
+    </s2c>
+</msg>
+<msg id="7" name="disband_room" desc="解散">
+    <c2s>
+    </c2s>
+    <s2c>
+        <f t="uint16" name="code" desc="错误码"/>
+        <f t="uint32" name="room_uid" desc="roomuid"/>
+    </s2c>
+</msg>
+<msg id="8" name="role_online_status" desc="玩家断线或重连状态更新（用于房间玩家突然离线或重连状态更新）">
+    <s2c>
+        <f t="uint16" name="code" desc="错误码"/>
+		<f t="uint32" name="role_id" desc="玩家id"/>
+        <f t="bool" name="is_online" desc="是否在线"/>
+    </s2c>
+</msg>
+</section>
+
+<section id="4" name="xlmj" desc="房间里面麻将具体协议">
+<msg id="1" name="create_xlmj_room" desc="创建房间">
+    <c2s>
+         <f t="uint8" name="piao" desc="漂1：1，2：2，3：3，5：5"/>
+		 <f t="uint8" name="play_count" desc="局数 3,4,6,8"/>
+		 <f t="uint8" name="play_type" desc="1:换三张; 2:甩三张; 3:先换后甩"/>
+		 <f t="uint32" name="longitude" desc="经度 * 10000"/>
+		 <f t="uint32" name="latitude" desc="纬度 * 10000"/>
+		 <f t="uint8" name="guild_id" desc="0 自己的房间 》0公会房间"/>
+    </c2s>
+    <s2c>
+        <f t="uint16" name="code" desc="错误码"/>
+    </s2c>
+</msg>
+<msg id="2" name="client_cmd" desc="客户上传命令">
+    <c2s>
+		 <f t="p_client_cmd" name="cmd" desc="cmd"/>
+    </c2s>
+    <s2c>
+        <f t="uint16" name="code" desc="错误码"/>
+    </s2c>
+</msg>
+<msg id="3" name="server_cmd" desc="服务器下发命令">
+    <s2c>
+        <f t="p_server_cmd" name="cmd" desc="cmd"/>
+    </s2c>
+</msg>
+<msg id="4" name="xlmj_settlement" desc="服务器下发（当局）结算面板">
+    <s2c>
+        <loop t="p_xlmj_role_settlement" name="role_list" desc="玩家结算信息"/>
+		<f t="uint32" name="dealer_id" desc="庄玩家id"/>
+		<f t="uint8" name="cur_play_count" desc="当前第几局"/>
+		<f t="uint8" name="all_play_count" desc="总共局数"/>
+		<f t="uint32" name="time" desc="时间"/>
+    </s2c>
+</msg>
+<msg id="5" name="rsp_relogin_xlmj_room" desc="重连房间信息">
+    <s2c>
+        <f t="p_room_xlmj_data" name="room_data" desc="房间数据"/>
+		<loop t="p_xlmj_role_card_list" name="role_card_list" desc="卡牌信息"/>
+		<f t="uint32" name="dealer_id" desc="庄玩家id"/>
+		<f t="uint32" name="time" desc="时间"/>
+		<f t="uint8" name="remain_card_num" desc="剩下牌数"/>
+		<f t="p_server_cmd" name="last_cmd" desc="玩家最后一次指令"/>
+    </s2c>
+</msg>
+<msg id="6" name="xlmj_final_settlement" desc="服务器下发（总）结算面板">
+    <s2c>
+		<f t="uint32" name="room_uid" desc="房号"/>
+        <loop t="p_xlmj_role_final_settlement" name="role_list" desc="玩家结算信息"/>
+		<f t="uint8" name="all_play_count" desc="总共局数"/>
+		<f t="uint8" name="piao" desc="漂1：1，2：2，3：3，5：5"/>
+		<f t="uint32" name="time" desc="时间"/>
+    </s2c>
+</msg>
+</section>
+
+
+<section id="5" name="guild" desc="公会">
+<msg id="1" name="create" desc="创建公会">
+    <c2s>
+        <f t="string" name="name" desc="公会名字"/>
+		<f t="string" name="announcement" desc="公告内容"/>
+		<f t="uint8" name="piao" desc="漂1：1，2：2，3：3，5：5  0:不设置"/>
+		<f t="uint8" name="play_count" desc="局数 3,4,6,8 0:不设置"/>
+		<f t="uint8" name="play_type" desc="1:换三张; 2:甩三张; 3:先换后甩  0:不设置"/>
+		<f t="uint8" name="pay_type" desc="1: 消耗会长（默认） 2。（AA消耗） 暂时全都是1"/>
+    </c2s>
+    <s2c>
+        <f t="uint16" name="code" desc="错误码"/>
+        <f t="uint32" name="guild_id" desc="公会id 创建成功为公会id"/>
+		<f t="p_guild_base" name="guild_data" desc="公会数据"/>
+    </s2c>
+</msg>
+<msg id="2" name="disband" desc="解散公会">
+    <c2s>
+         <f t="uint32" name="guild_id" desc="公会id "/>
+    </c2s>
+    <s2c>
+        <f t="uint16" name="code" desc="错误码"/>
+        <f t="uint32" name="guild_id" desc="公会id 解散成功为0"/>
+    </s2c>
+</msg>
+<msg id="3" name="deal" desc="管理公会">
+    <c2s>
+        <f t="uint8" name="operation" desc="1升职 2降职 3踢出"/>
+        <f t="uint32" name="role_id" desc="玩家id"/>
+		 <f t="uint32" name="guild_id" desc="公会id "/>
+    </c2s>
+    <s2c>
+        <f t="uint16" name="code" desc="错误码"/>
+    </s2c>
+</msg>
+<msg id="4" name="quit" desc="退出公会">
+    <c2s>
+         <f t="uint32" name="guild_id" desc="公会id "/>
+    </c2s>
+    <s2c>
+        <f t="uint16" name="code" desc="错误码"/>
+        <f t="uint32" name="guild_id" desc="公会id 退出成功为0"/>
+    </s2c>
+</msg>
+<msg id="5" name="modify_announcement" desc="修改公会公告">
+    <c2s>
+        <f t="string" name="announcement" desc="公告内容"/>
+		 <f t="uint32" name="guild_id" desc="公会id "/>
+    </c2s>
+    <s2c>
+        <f t="uint16" name="code" desc="错误码"/>
+		<f t="uint32" name="guild_id" desc="公会id"/>
+		<f t="string" name="announcement" desc="公告内容"/>
+    </s2c>
+</msg>
+<msg id="6" name="basic_info" desc="公会基本信息">
+    <c2s>
+        <f t="uint32" name="guild_id" desc="公会id"/>
+    </c2s>
+    <s2c>
+        <f t="uint16" name="code" desc="错误码"/>
+        <f t="p_guild_detail" name="guild_data" desc="公会数据"/>
+    </s2c>
+</msg>
+<msg id="7" name="member_list" desc="公会的人员信息">
+    <c2s>
+        <f t="uint32" name="guild_id" desc="公会id"/>
+    </c2s>
+    <s2c>
+        <f t="uint16" name="code" desc="错误码"/>
+        <f t="uint32" name="guild_id" desc="公会id"/>
+        <loop t="p_guild_member" name="list" desc="公会成员"/>
+    </s2c>
+</msg>
+<msg id="8" name="other_list" desc="其他公会信息">
+    <c2s>
+        <f t="uint16" name="page" desc="显示第几页"/>
+        <f t="bool" name="mask" desc="是否显示已满的工会"/>
+    </c2s>
+    <s2c>
+        <f t="uint16" name="code" desc="错误码"/>
+        <f t="uint16" name="sum" desc="总共有多少个工会信息"/>
+        <loop t="p_guild_base" name="list" desc="其他公会信息"/>
+    </s2c>
+</msg>
+<msg id="9" name="search_by_name" desc="通过公会名字查找">
+    <c2s>
+        <f t="string" name="guild_name" desc="公会名字"/>
+    </c2s>
+    <s2c>
+        <f t="uint16" name="code" desc="错误码"/>
+        <loop t="p_guild_base" name="list" desc="公会列表"/>
+    </s2c>
+</msg>
+<msg id="10" name="search_by_owener" desc="通过会长名字查询">
+    <c2s>
+        <f t="string" name="owner_name" desc="会长名字"/>
+    </c2s>
+    <s2c>
+        <f t="uint16" name="code" desc="错误码"/>
+        <loop t="p_guild_base" name="list" desc="公会列表"/>
+    </s2c>
+</msg>
+<msg id="11" name="search_by_guild_id" desc="通过公会id查找">
+    <c2s>
+        <f t="uint32" name="guild_id" desc="公会id"/>
+    </c2s>
+    <s2c>
+        <f t="uint16" name="code" desc="错误码"/>
+        <f t="p_guild_base" name="data" desc="公会列表"/>
+    </s2c>
+</msg>
+<msg id="12" name="approve" desc="申请加入某个公会">
+    <c2s>
+        <f t="uint32" name="guild_id" desc="公会id"/>
+    </c2s>
+    <s2c>
+        <f t="uint16" name="code" desc="错误码"/>
+        <f t="uint32" name="guild_id" desc="申请的工会id"/>
+    </s2c>
+</msg>
+<msg id="13" name="approve_list" desc="申请审核公会列表">
+    <c2s>
+        <f t="uint32" name="guild_id" desc="公会id"/>
+    </c2s>
+    <s2c>
+        <f t="uint16" name="code" desc="错误码"/>
+        <loop t="p_guild_apply_member" name="list" desc="申请加入公会的玩家"/>
+    </s2c>
+</msg>
+<msg id="14" name="handle_approve" desc="审核申请">
+    <c2s>
+        <f t="uint32" name="role_id" desc="玩家id"/>
+        <f t="bool" name="result" desc="结果"/>
+		<f t="uint32" name="guild_id" desc="公会id"/>
+    </c2s>
+    <s2c>
+        <f t="uint16" name="code" desc="错误码"/>
+    </s2c>
+</msg>
+<msg id="15" name="log" desc="公会日志">
+    <c2s>
+        <f t="uint16" name="log_type" desc="日志类型"/>
+        <f t="uint16" name="page" desc="页"/>
+		<f t="uint32" name="start_time" desc="开启时间"/>
+		<f t="uint32" name="end_time" desc="结束时间"/>
+		<f t="uint32" name="guild_id" desc="公会id"/>
+    </c2s>
+    <s2c>
+        <f t="uint16" name="code" desc="错误码"/>
+		<f t="uint32" name="guild_id" desc="公会id"/>
+        <loop t="p_guild_log" name="list" desc="日志列表"/>
+		<f t="uint16" name="page" desc="页"/>
+		<f t="uint16" name="all_page" desc="总页"/>
+    </s2c>
+</msg>
+<msg id="16" name="guild_room" desc="公会房间信息">
+    <c2s>
+        <f t="uint8" name="room_type" desc="0全部显示 1 显示未开始的房间"/>
+		<f t="uint32" name="guild_id" desc="公会id"/>
+    </c2s>
+    <s2c>
+        <f t="uint16" name="code" desc="错误码"/>
+		<f t="uint32" name="guild_id" desc="公会id"/>
+        <loop t="p_room_data" name="list" desc="房间列表"/>
+    </s2c>
+</msg>
+<msg id="17" name="change_info" desc="公会信息发生变化">
+    <s2c>
+        <f t="uint32" name="guild_id" desc="公会id"/>
+        <f t="string" name="guild_name" desc="公会名字"/>
+    </s2c>
+</msg>
+<msg id="18" name="self_guild_list" desc="自己公会列表">
+	 <c2s>
+    </c2s>
+    <s2c>
+        <loop t="p_guild_base" name="guild_list" desc="公会列表"/>
+    </s2c>
+</msg>
+<msg id="19" name="modify_guild_rule" desc="修改公会规则">
+	 <c2s>
+		<f t="uint32" name="guild_id" desc="公会id"/>
+		<f t="string" name="name" desc="公会名字"/>
+		<f t="string" name="announcement" desc="公告内容"/>
+		<f t="uint8" name="piao" desc="漂1：1，2：2，3：3，5：5  0:不设置"/>
+		<f t="uint8" name="play_count" desc="局数 3,4,6,8 0:不设置"/>
+		<f t="uint8" name="play_type" desc="1:换三张; 2:甩三张; 3:先换后甩  0:不设置"/>
+    </c2s>
+    <s2c>
+		 <f t="uint16" name="code" desc="错误码"/>
+		 <f t="p_guild_detail" name="guild_data" desc="公会数据"/>
+    </s2c>
+</msg>
+<msg id="20" name="guild_winer_list" desc="公会大赢家列表">
+	 <c2s>
+		<f t="uint32" name="guild_id" desc="公会id"/>
+		<f t="uint16" name="page" desc="显示第几页"/>
+    </c2s>
+    <s2c>
+		<f t="uint16" name="page" desc="页"/>
+		<f t="uint16" name="all_page" desc="总页"/>
+        <loop t="p_guild_winer_log" name="winner_list" desc="列表"/>
+    </s2c>
+</msg>
+<msg id="21" name="guild_daily_cost_list" desc="公会日常消耗列表">
+	 <c2s>
+		<f t="uint32" name="guild_id" desc="公会id"/>
+		<f t="uint16" name="page" desc="显示第几页"/>
+    </c2s>
+    <s2c>
+		<f t="uint16" name="page" desc="页"/>
+		<f t="uint16" name="all_page" desc="总页"/>
+        <loop t="p_guild_daily_cost_log" name="winner_list" desc="列表"/>
+    </s2c>
+</msg>
+</section>
+
+<section id="10" name="chat" desc="聊天">
+<msg id="1" name="req" desc="聊天请求，包含世界，房间">
+    <c2s>
+        <f t="uint8" name="chat_type" desc="聊天类型, 1 世界, 2 房间"/>
+        <f t="string" name="content" desc="聊天内容"/>
+    </c2s>
+    <s2c>
+        <f t="uint16" name="code" desc="错误码"/>
+    </s2c>
+</msg>
+<msg id="2" name="private_chat" desc="私聊">
+     <c2s>
+        <f t="uint32" name="role_id" desc="玩家id"/>
+        <f t="string" name="content" desc="聊天内容"/>
+    </c2s>
+    <s2c>
+        <f t="uint16" name="code" desc="错误码"/>
+        <f t="p_simple_role" name="sender_role" desc="发送者数据"/>
+        <f t="string" name="content" desc="聊天内容"/>
+    </s2c>
+</msg>
+<msg id="3" name="content_push" desc="聊天内容推送">
+    <s2c>
+        <f t="uint8" name="chat_type" desc="聊天类型"/>
+        <f t="p_simple_role" name="sender_role" desc="发送者数据"/>
+        <f t="string" name="content" desc="聊天内容"/>
+    </s2c>
+</msg>
+<msg id="4" name="sys_anounce" desc="系统公告">
+    <s2c>
+        <f t="string" name="content" desc="内容"/>
+        <f t="string" name="http_link" desc="http连接"/>
+    </s2c>
+</msg>
+</section>
+</protocol>

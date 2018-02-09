@@ -1,0 +1,5 @@
+local p_guild_log=ProtoManager.Descriptor('p_guild_log')
+p_guild_log:AddField('name','string' )
+p_guild_log:AddField('op_type','uint16' )
+p_guild_log:AddField('ex_params','string' )
+p_guild_log:AddField('time','uint32' )

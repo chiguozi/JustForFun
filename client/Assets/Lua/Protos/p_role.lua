@@ -1,0 +1,8 @@
+local p_role=ProtoManager.Descriptor('p_role')
+p_role:AddField('id','uint32' )
+p_role:AddField('name','string' )
+p_role:AddField('icon','string' )
+p_role:AddField('diam','uint32' )
+p_role:AddField('gold','uint32' )
+p_role:AddField('is_gm','uint8' )
+p_role:AddField('sex','uint8' )

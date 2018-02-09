@@ -1,0 +1,8 @@
+local p_guild_apply_member=ProtoManager.Descriptor('p_guild_apply_member')
+p_guild_apply_member:AddField('id','uint32' )
+p_guild_apply_member:AddField('name','string' )
+p_guild_apply_member:AddField('lvl','uint8' )
+p_guild_apply_member:AddField('sex','uint8' )
+p_guild_apply_member:AddField('time','uint32' )
+p_guild_apply_member:AddField('icon','string' )
+p_guild_apply_member:AddField('credit','uint32' )

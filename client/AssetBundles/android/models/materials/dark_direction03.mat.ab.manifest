@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 2330495279
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e7051a3448af7e1ae9d7aea64a7266cb
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 8d068741ae817c9b5c92580f37de87e3
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Models/Materials/dark_direction03.mat
+Dependencies:
+- F:/Code/ChessProj/QP/AssetBundles/android/models/texture/direction03.png.ab

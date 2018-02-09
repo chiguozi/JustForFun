@@ -1,0 +1,40 @@
+ManifestFileVersion: 0
+CRC: 3985628066
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f9d2a6b576a5c1198f2a0e3a0ad539c4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 424169e0d9b20c4dc06325ceef846dc3
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Models/Prefab/mj.prefab
+Dependencies:
+- F:/Code/ChessProj/QP/AssetBundles/android/models/fbx/mahjongshadow.fbx.ab
+- F:/Code/ChessProj/QP/AssetBundles/android/models/fbx/all.fbx.ab
+- F:/Code/ChessProj/QP/AssetBundles/android/models/materials/mahjongshadow_.mat.ab
+- F:/Code/ChessProj/QP/AssetBundles/android/models/materials/mj_hand.mat.ab
+- F:/Code/ChessProj/QP/AssetBundles/android/models/texture/icon_02.png.ab
+- F:/Code/ChessProj/QP/AssetBundles/android/models/texture/jin_1.png.ab

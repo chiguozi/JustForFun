@@ -1,0 +1,41 @@
+ManifestFileVersion: 0
+CRC: 1071717551
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7c0dcd6a3c42e1d8a0cc218fc7e81552
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 6690c621097639a04b15ac017f98b816
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+Assets:
+- Assets/Models/Prefab/mjtable.prefab
+Dependencies:
+- F:/Code/ChessProj/QP/AssetBundles/android/models/fbx/direction.fbx.ab
+- F:/Code/ChessProj/QP/AssetBundles/android/models/fbx/majiangzhuo.fbx.ab
+- F:/Code/ChessProj/QP/AssetBundles/android/models/materials/dark_direction02.mat.ab
+- F:/Code/ChessProj/QP/AssetBundles/android/models/materials/dark_direction03.mat.ab
+- F:/Code/ChessProj/QP/AssetBundles/android/models/materials/dark_direction04.mat.ab
+- F:/Code/ChessProj/QP/AssetBundles/android/models/materials/diban.mat.ab
+- F:/Code/ChessProj/QP/AssetBundles/android/models/materials/dark_direction01.mat.ab
+- F:/Code/ChessProj/QP/AssetBundles/android/models/materials/light_direction01.mat.ab
+- F:/Code/ChessProj/QP/AssetBundles/android/models/materials/light_direction02.mat.ab
+- F:/Code/ChessProj/QP/AssetBundles/android/models/materials/light_direction03.mat.ab
+- F:/Code/ChessProj/QP/AssetBundles/android/models/materials/light_direction04.mat.ab
+- F:/Code/ChessProj/QP/AssetBundles/android/models/materials/shuzi.mat.ab
+- F:/Code/ChessProj/QP/AssetBundles/android/models/materials/zhuozi_01.mat.ab

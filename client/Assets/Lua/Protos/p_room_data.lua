@@ -1,0 +1,6 @@
+local p_room_data=ProtoManager.Descriptor('p_room_data')
+p_room_data:AddField('room_uid','uint32' )
+p_room_data:AddField('room_type','uint32' )
+p_room_data:AddField('role_list','p_simple_role',true )
+p_room_data:AddField('room_state','uint8' )
+p_room_data:AddField('cur_play_count','uint8' )

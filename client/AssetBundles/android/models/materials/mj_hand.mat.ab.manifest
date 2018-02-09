@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 3371837295
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 175ded873e8e3ab48bf7ceb50fb4077a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 8d068741ae817c9b5c92580f37de87e3
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Models/Materials/mj_hand.mat
+Dependencies:
+- F:/Code/ChessProj/QP/AssetBundles/android/models/texture/mj_t.png.ab
+- F:/Code/ChessProj/QP/AssetBundles/android/shaders.ab

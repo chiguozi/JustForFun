@@ -1,0 +1,32 @@
+ManifestFileVersion: 0
+CRC: 1787689627
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: bc8fa49fe1f0a5e29d136895cb695eb2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: aa2c3d4d5e26acfb6feee09e64ac5254
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+Assets:
+- Assets/Models/FBX/direction.FBX
+Dependencies: []

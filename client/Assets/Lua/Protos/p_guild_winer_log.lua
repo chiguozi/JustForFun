@@ -1,0 +1,6 @@
+local p_guild_winer_log=ProtoManager.Descriptor('p_guild_winer_log')
+p_guild_winer_log:AddField('role','p_simple_role' )
+p_guild_winer_log:AddField('credit','uint32' )
+p_guild_winer_log:AddField('position','uint8' )
+p_guild_winer_log:AddField('cost_diam','uint8' )
+p_guild_winer_log:AddField('timestamp','uint32' )

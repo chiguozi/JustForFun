@@ -1,0 +1,234 @@
+ManifestFileVersion: 0
+CRC: 2977695137
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: models/fbx/direction.fbx.ab
+      Dependencies: {}
+    Info_1:
+      Name: models/fbx/jiantou.fbx.ab
+      Dependencies: {}
+    Info_2:
+      Name: models/fbx/mahjongshadow.fbx.ab
+      Dependencies: {}
+    Info_3:
+      Name: models/fbx/all.fbx.ab
+      Dependencies: {}
+    Info_4:
+      Name: models/animator/anim_jiantou.controller.ab
+      Dependencies:
+        Dependency_0: models/fbx/jiantou.fbx.ab
+    Info_5:
+      Name: models/prefab/mjdice.prefab.ab
+      Dependencies:
+        Dependency_0: models/fbx/mahjong.fbx.ab
+        Dependency_1: models/materials/dice.mat.ab
+    Info_6:
+      Name: models/fbx/majiangzhuo.fbx.ab
+      Dependencies: {}
+    Info_7:
+      Name: models/materials/dark_direction02.mat.ab
+      Dependencies:
+        Dependency_0: models/texture/direction02.png.ab
+    Info_8:
+      Name: models/materials/dark_direction03.mat.ab
+      Dependencies:
+        Dependency_0: models/texture/direction03.png.ab
+    Info_9:
+      Name: models/materials/dark_direction04.mat.ab
+      Dependencies:
+        Dependency_0: models/texture/direction04.png.ab
+    Info_10:
+      Name: models/materials/diban.mat.ab
+      Dependencies:
+        Dependency_0: models/texture/background_bk.png.ab
+    Info_11:
+      Name: models/materials/ef_guangdan_ghzp_a.mat.ab
+      Dependencies:
+        Dependency_0: models/texture/ef_guangdan_ghzp_a.png.ab
+    Info_12:
+      Name: models/materials/ef_huan_ghz86.mat.ab
+      Dependencies:
+        Dependency_0: models/texture/ef_huan_ghz86.png.ab
+    Info_13:
+      Name: models/materials/jiantou.mat.ab
+      Dependencies:
+        Dependency_0: models/texture/jiantou.png.ab
+    Info_14:
+      Name: models/materials/dark_direction01.mat.ab
+      Dependencies:
+        Dependency_0: models/texture/direction01.png.ab
+    Info_15:
+      Name: models/fbx/mahjong.fbx.ab
+      Dependencies: {}
+    Info_16:
+      Name: models/materials/jinse_firea.mat.ab
+      Dependencies:
+        Dependency_0: models/texture/ef_lianxu_ghz70.png.ab
+        Dependency_1: models/texture/noise_wave_000.png.ab
+        Dependency_2: shaders.ab
+    Info_17:
+      Name: models/materials/light_direction01.mat.ab
+      Dependencies:
+        Dependency_0: models/texture/direction05.png.ab
+    Info_18:
+      Name: models/materials/light_direction02.mat.ab
+      Dependencies:
+        Dependency_0: models/texture/direction06.png.ab
+    Info_19:
+      Name: models/materials/light_direction03.mat.ab
+      Dependencies:
+        Dependency_0: models/texture/direction07.png.ab
+    Info_20:
+      Name: models/materials/light_direction04.mat.ab
+      Dependencies:
+        Dependency_0: models/texture/direction08.png.ab
+    Info_21:
+      Name: models/materials/mahjongshadow_.mat.ab
+      Dependencies:
+        Dependency_0: models/texture/mahjongshadow.png.ab
+    Info_22:
+      Name: models/materials/mj_hand.mat.ab
+      Dependencies:
+        Dependency_0: models/texture/mj_t.png.ab
+        Dependency_1: shaders.ab
+    Info_23:
+      Name: models/materials/shuzi.mat.ab
+      Dependencies:
+        Dependency_0: models/texture/shuzi.png.ab
+    Info_24:
+      Name: models/prefab/mjplayer.prefab.ab
+      Dependencies: {}
+    Info_25:
+      Name: models/materials/dice.mat.ab
+      Dependencies:
+        Dependency_0: models/texture/mahjong_color.png.ab
+    Info_26:
+      Name: models/prefab/mjscene.prefab.ab
+      Dependencies:
+        Dependency_0: models/fbx/direction.fbx.ab
+        Dependency_1: models/fbx/majiangzhuo.fbx.ab
+        Dependency_2: models/materials/dark_direction02.mat.ab
+        Dependency_3: models/materials/dark_direction03.mat.ab
+        Dependency_4: models/materials/dark_direction04.mat.ab
+        Dependency_5: models/materials/diban.mat.ab
+        Dependency_6: models/materials/dark_direction01.mat.ab
+        Dependency_7: models/materials/light_direction01.mat.ab
+        Dependency_8: models/materials/light_direction02.mat.ab
+        Dependency_9: models/materials/light_direction03.mat.ab
+        Dependency_10: models/materials/light_direction04.mat.ab
+        Dependency_11: models/materials/shuzi.mat.ab
+        Dependency_12: models/materials/zhuozi_01.mat.ab
+    Info_27:
+      Name: models/materials/zhuozi_01.mat.ab
+      Dependencies:
+        Dependency_0: models/texture/zhuozi_01.png.ab
+    Info_28:
+      Name: models/prefab/mjtable.prefab.ab
+      Dependencies:
+        Dependency_0: models/fbx/direction.fbx.ab
+        Dependency_1: models/fbx/majiangzhuo.fbx.ab
+        Dependency_2: models/materials/dark_direction02.mat.ab
+        Dependency_3: models/materials/dark_direction03.mat.ab
+        Dependency_4: models/materials/dark_direction04.mat.ab
+        Dependency_5: models/materials/diban.mat.ab
+        Dependency_6: models/materials/dark_direction01.mat.ab
+        Dependency_7: models/materials/light_direction01.mat.ab
+        Dependency_8: models/materials/light_direction02.mat.ab
+        Dependency_9: models/materials/light_direction03.mat.ab
+        Dependency_10: models/materials/light_direction04.mat.ab
+        Dependency_11: models/materials/shuzi.mat.ab
+        Dependency_12: models/materials/zhuozi_01.mat.ab
+    Info_29:
+      Name: models/texture/background_bk.png.ab
+      Dependencies: {}
+    Info_30:
+      Name: models/texture/direction01.png.ab
+      Dependencies: {}
+    Info_31:
+      Name: models/texture/direction02.png.ab
+      Dependencies: {}
+    Info_32:
+      Name: models/texture/direction03.png.ab
+      Dependencies: {}
+    Info_33:
+      Name: models/texture/direction04.png.ab
+      Dependencies: {}
+    Info_34:
+      Name: models/texture/direction05.png.ab
+      Dependencies: {}
+    Info_35:
+      Name: models/texture/direction06.png.ab
+      Dependencies: {}
+    Info_36:
+      Name: models/texture/direction07.png.ab
+      Dependencies: {}
+    Info_37:
+      Name: models/texture/direction08.png.ab
+      Dependencies: {}
+    Info_38:
+      Name: models/texture/ef_guangdan_ghzp_a.png.ab
+      Dependencies: {}
+    Info_39:
+      Name: models/texture/ef_huan_ghz86.png.ab
+      Dependencies: {}
+    Info_40:
+      Name: models/texture/ef_lianxu_ghz70.png.ab
+      Dependencies: {}
+    Info_41:
+      Name: models/texture/icon_02.png.ab
+      Dependencies: {}
+    Info_42:
+      Name: models/texture/jiantou.png.ab
+      Dependencies: {}
+    Info_43:
+      Name: models/texture/jin_1.png.ab
+      Dependencies: {}
+    Info_44:
+      Name: models/texture/mahjongshadow.png.ab
+      Dependencies: {}
+    Info_45:
+      Name: models/texture/mahjong_color.png.ab
+      Dependencies: {}
+    Info_46:
+      Name: models/texture/mj_t.png.ab
+      Dependencies: {}
+    Info_47:
+      Name: models/texture/noise_wave_000.png.ab
+      Dependencies: {}
+    Info_48:
+      Name: models/texture/shuzi.png.ab
+      Dependencies: {}
+    Info_49:
+      Name: models/texture/zhuozi_01.png.ab
+      Dependencies: {}
+    Info_50:
+      Name: shaders.ab
+      Dependencies: {}
+    Info_51:
+      Name: models/prefab/mj.prefab.ab
+      Dependencies:
+        Dependency_0: models/fbx/mahjongshadow.fbx.ab
+        Dependency_1: models/fbx/all.fbx.ab
+        Dependency_2: models/materials/mahjongshadow_.mat.ab
+        Dependency_3: models/materials/mj_hand.mat.ab
+        Dependency_4: models/texture/icon_02.png.ab
+        Dependency_5: models/texture/jin_1.png.ab
+    Info_52:
+      Name: models/prefab/jiantou.prefab.ab
+      Dependencies:
+        Dependency_0: models/fbx/jiantou.fbx.ab
+        Dependency_1: models/animator/anim_jiantou.controller.ab
+        Dependency_2: models/materials/ef_guangdan_ghzp_a.mat.ab
+        Dependency_3: models/materials/ef_huan_ghz86.mat.ab
+        Dependency_4: models/materials/jiantou.mat.ab
+        Dependency_5: models/materials/jinse_firea.mat.ab
+    Info_53:
+      Name: ui/wndlogin.prefab.ab
+      Dependencies: {}
+    Info_54:
+      Name: models/prefab/mahjongtiles.prefab.ab
+      Dependencies:
+        Dependency_0: models/fbx/all.fbx.ab
+        Dependency_1: models/fbx/mahjong.fbx.ab
+        Dependency_2: models/materials/mj_hand.mat.ab

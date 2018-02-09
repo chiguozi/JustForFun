@@ -1,0 +1,6 @@
+local p_match_record=ProtoManager.Descriptor('p_match_record')
+p_match_record:AddField('uid','uint32' )
+p_match_record:AddField('room_uid','uint32' )
+p_match_record:AddField('role_list','p_match_record_role',true )
+p_match_record:AddField('timestamp','uint32' )
+p_match_record:AddField('all_play_count','int8' )

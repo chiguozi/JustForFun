@@ -1,0 +1,29 @@
+ManifestFileVersion: 0
+CRC: 1588889442
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6bc799ff0e154ac624a729316784063d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 02689407958b3b99319348c541dc5079
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+Assets:
+- Assets/Models/Prefab/mahjongtiles.prefab
+Dependencies:
+- F:/Code/ChessProj/QP/AssetBundles/android/models/fbx/all.fbx.ab
+- F:/Code/ChessProj/QP/AssetBundles/android/models/fbx/mahjong.fbx.ab
+- F:/Code/ChessProj/QP/AssetBundles/android/models/materials/mj_hand.mat.ab

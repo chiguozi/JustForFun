@@ -1,0 +1,8 @@
+local p_xlmj_role_final_settlement=ProtoManager.Descriptor('p_xlmj_role_final_settlement')
+p_xlmj_role_final_settlement:AddField('role','p_simple_role' )
+p_xlmj_role_final_settlement:AddField('place','uint8' )
+p_xlmj_role_final_settlement:AddField('all_score','int16' )
+p_xlmj_role_final_settlement:AddField('hu_count','uint8' )
+p_xlmj_role_final_settlement:AddField('be_hu_count','uint8' )
+p_xlmj_role_final_settlement:AddField('ming_gang_count','uint8' )
+p_xlmj_role_final_settlement:AddField('an_gang_count','uint8' )

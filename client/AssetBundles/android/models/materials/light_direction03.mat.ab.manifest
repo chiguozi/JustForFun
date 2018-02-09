@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 1977360766
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f76bd6874b18792aa1d5f55076cf8a57
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 8d068741ae817c9b5c92580f37de87e3
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Models/Materials/light_direction03.mat
+Dependencies:
+- F:/Code/ChessProj/QP/AssetBundles/android/models/texture/direction07.png.ab

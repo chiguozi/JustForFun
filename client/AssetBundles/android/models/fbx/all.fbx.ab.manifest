@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 908552384
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c0c0157a2e8589f1a99a7ae8b31cea9c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 7b3e506932349f67a7c4cb6d46637ab0
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Models/FBX/all.fbx
+Dependencies: []

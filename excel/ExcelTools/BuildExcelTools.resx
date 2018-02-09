@@ -1,0 +1,873 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;excelPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="buildExcel_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 37</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;excelBrowser_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;excelPathTitle.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="searchPreTxt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 5, 6, 5</value>
+  </data>
+  <data name="&gt;&gt;searchTitle.Name" xml:space="preserve">
+    <value>searchTitle</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="removeSet_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;addSet_btn.Name" xml:space="preserve">
+    <value>addSet_btn</value>
+  </data>
+  <data name="&gt;&gt;excelPathTitle.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="excelPathTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="selectListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="clearAllSet_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 5, 6, 5</value>
+  </data>
+  <data name="searchSetTxt.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="previewListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>532, 122</value>
+  </data>
+  <data name="clearContext_btn.Text" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="previewListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>360, 445</value>
+  </data>
+  <data name="addSet_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 40</value>
+  </data>
+  <data name="&gt;&gt;csFile_btn.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="excelPathTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="build_create_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 5, 6, 5</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>930, 1110</value>
+  </data>
+  <data name="&gt;&gt;csFileLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;removeSet_btn.Name" xml:space="preserve">
+    <value>removeSet_btn</value>
+  </data>
+  <data name="&gt;&gt;build_create_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>757, 144</value>
+  </data>
+  <data name="&gt;&gt;allSet_btn.Name" xml:space="preserve">
+    <value>allSet_btn</value>
+  </data>
+  <data name="&gt;&gt;build_create_btn.Name" xml:space="preserve">
+    <value>build_create_btn</value>
+  </data>
+  <data name="searchTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>354, 37</value>
+  </data>
+  <data name="searchTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;addSet_btn.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="build_create_btn.Text" xml:space="preserve">
+    <value>转换并生成</value>
+  </data>
+  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>156, 144</value>
+  </data>
+  <data name="buildStateBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 5, 6, 5</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Excel数据导出工具</value>
+  </data>
+  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;resetBuild.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;removeSet_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;searchTitle.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="build_create_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>641, 630</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="reset_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="searchSetTxt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 5, 6, 5</value>
+  </data>
+  <data name="createCs_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 5, 6, 5</value>
+  </data>
+  <data name="&gt;&gt;searchPreTxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="build_create_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 37</value>
+  </data>
+  <data name="&gt;&gt;buildExcel_btn.Name" xml:space="preserve">
+    <value>buildExcel_btn</value>
+  </data>
+  <data name="&gt;&gt;searchTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>11, 21</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;allSet_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="allSet_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 40</value>
+  </data>
+  <data name="&gt;&gt;searchSetTxt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;previewListBox.Name" xml:space="preserve">
+    <value>previewListBox</value>
+  </data>
+  <data name="&gt;&gt;csFile_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;selectListBox.Name" xml:space="preserve">
+    <value>selectListBox</value>
+  </data>
+  <data name="searchSetTxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 581</value>
+  </data>
+  <data name="dataFileLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 139</value>
+  </data>
+  <data name="searchTitle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 0, 6, 0</value>
+  </data>
+  <data name="&gt;&gt;buildStateBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="excelPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>156, 26</value>
+  </data>
+  <data name="createCs_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 630</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="removeSet_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 40</value>
+  </data>
+  <data name="&gt;&gt;clearContext_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>930, 1110</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="createCs_btn.Text" xml:space="preserve">
+    <value>生成lua文件</value>
+  </data>
+  <data name="&gt;&gt;csFileLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;excelBrowser_btn.Name" xml:space="preserve">
+    <value>excelBrowser_btn</value>
+  </data>
+  <data name="&gt;&gt;buildStateBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="allSet_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 5, 6, 5</value>
+  </data>
+  <data name="&gt;&gt;allSet_btn.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="dataFile_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;buildExcel_btn.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;build_create_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="excelPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>587, 31</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="addSet_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="clearAllSet_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 40</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>532, 80</value>
+  </data>
+  <data name="searchPreTxt.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;selectListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="excelPath.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>BuildExcelTools</value>
+  </data>
+  <data name="&gt;&gt;buildExcel_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="searchSetTxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>351, 31</value>
+  </data>
+  <data name="excelBrowser_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 37</value>
+  </data>
+  <data name="&gt;&gt;searchSetTxt.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="allSet_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 173</value>
+  </data>
+  <data name="excelPathTitle.Text" xml:space="preserve">
+    <value>Excel目录:</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="clearAllSet_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 266</value>
+  </data>
+  <data name="&gt;&gt;searchSetTxt.Name" xml:space="preserve">
+    <value>searchSetTxt</value>
+  </data>
+  <data name="clearAllSet_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="excelBrowser_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;resetBuild.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buildStateBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>875, 340</value>
+  </data>
+  <data name="resetBuild.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="allSet_btn.Text" xml:space="preserve">
+    <value>全选</value>
+  </data>
+  <data name="searchPreTxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>532, 581</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="selectListBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 5, 6, 5</value>
+  </data>
+  <data name="excelPath.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 5, 6, 5</value>
+  </data>
+  <data name="dataFile_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>757, 136</value>
+  </data>
+  <data name="&gt;&gt;clearAllSet_btn.Name" xml:space="preserve">
+    <value>clearAllSet_btn</value>
+  </data>
+  <data name="&gt;&gt;csFile_btn.Name" xml:space="preserve">
+    <value>csFile_btn</value>
+  </data>
+  <data name="&gt;&gt;excelPathTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dataFile_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="csFile_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;previewListBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="clearAllSet_btn.Text" xml:space="preserve">
+    <value>全部清除</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 5, 6, 5</value>
+  </data>
+  <data name="&gt;&gt;excelBrowser_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="selectListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>351, 445</value>
+  </data>
+  <data name="&gt;&gt;createCs_btn.Name" xml:space="preserve">
+    <value>createCs_btn</value>
+  </data>
+  <data name="&gt;&gt;dataFile_btn.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;clearAllSet_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="reset_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>708, 632</value>
+  </data>
+  <data name="&gt;&gt;searchPreTxt.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;clearAllSet_btn.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;searchSetTxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;createCs_btn.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;clearContext_btn.Name" xml:space="preserve">
+    <value>clearContext_btn</value>
+  </data>
+  <data name="clearContext_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;removeSet_btn.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;clearContext_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buildExcel_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 5, 6, 5</value>
+  </data>
+  <data name="&gt;&gt;csFileLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="buildExcel_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>323, 630</value>
+  </data>
+  <data name="&gt;&gt;selectListBox.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 144</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="searchTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 10pt</value>
+  </data>
+  <data name="&gt;&gt;resetBuild.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="clearContext_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>814, 679</value>
+  </data>
+  <data name="&gt;&gt;removeSet_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="searchPreTxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>360, 31</value>
+  </data>
+  <data name="previewListBox.ItemHeight" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;dataFileLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="csFile_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>757, 81</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;excelBrowser_btn.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;previewListBox.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
+    <value>textBox1</value>
+  </data>
+  <data name="&gt;&gt;searchPreTxt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="excelBrowser_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 5, 6, 5</value>
+  </data>
+  <data name="excelPathTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 10pt</value>
+  </data>
+  <data name="build_create_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;dataFileLabel.Name" xml:space="preserve">
+    <value>dataFileLabel</value>
+  </data>
+  <data name="searchTitle.Text" xml:space="preserve">
+    <value>要转换的数据列表</value>
+  </data>
+  <data name="excelPathTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 37</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="addSet_btn.Text" xml:space="preserve">
+    <value>&lt;&lt; +</value>
+  </data>
+  <data name="searchTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="previewListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;clearAllSet_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;allSet_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="clearContext_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 5, 6, 5</value>
+  </data>
+  <data name="&gt;&gt;csFileLabel.Name" xml:space="preserve">
+    <value>csFileLabel</value>
+  </data>
+  <data name="excelPath.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="resetBuild.Location" type="System.Drawing.Point, System.Drawing">
+    <value>708, 632</value>
+  </data>
+  <data name="clearContext_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 40</value>
+  </data>
+  <data name="buildStateBox.ItemHeight" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;clearContext_btn.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="removeSet_btn.Text" xml:space="preserve">
+    <value>- &gt;&gt;</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>363, 37</value>
+  </data>
+  <data name="addSet_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 5, 6, 5</value>
+  </data>
+  <data name="&gt;&gt;dataFile_btn.Name" xml:space="preserve">
+    <value>dataFile_btn</value>
+  </data>
+  <data name="removeSet_btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 5, 6, 5</value>
+  </data>
+  <data name="&gt;&gt;selectListBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;excelPath.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;buildStateBox.Name" xml:space="preserve">
+    <value>buildStateBox</value>
+  </data>
+  <data name="&gt;&gt;searchPreTxt.Name" xml:space="preserve">
+    <value>searchPreTxt</value>
+  </data>
+  <data name="&gt;&gt;buildExcel_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>待转换的数据列表</value>
+  </data>
+  <data name="&gt;&gt;excelPathTitle.Name" xml:space="preserve">
+    <value>excelPathTitle</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;buildStateBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="excelBrowser_btn.Text" xml:space="preserve">
+    <value>Browser</value>
+  </data>
+  <data name="removeSet_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 466</value>
+  </data>
+  <data name="searchTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 80</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="csFileLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 84</value>
+  </data>
+  <data name="csFileLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="selectListBox.ItemHeight" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 81</value>
+  </data>
+  <data name="&gt;&gt;excelPath.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>906, 1046</value>
+  </data>
+  <data name="&gt;&gt;excelPath.Name" xml:space="preserve">
+    <value>excelPath</value>
+  </data>
+  <data name="&gt;&gt;dataFileLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addSet_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="excelPathTitle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 0, 6, 0</value>
+  </data>
+  <data name="createCs_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 37</value>
+  </data>
+  <data name="buildExcel_btn.Text" xml:space="preserve">
+    <value>转换数据表文件</value>
+  </data>
+  <data name="&gt;&gt;dataFileLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 10pt</value>
+  </data>
+  <data name="buildExcel_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;searchTitle.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>757, 81</value>
+  </data>
+  <data name="&gt;&gt;createCs_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;createCs_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;resetBuild.Name" xml:space="preserve">
+    <value>resetBuild</value>
+  </data>
+  <data name="buildStateBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 677</value>
+  </data>
+  <data name="buildStateBox.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="createCs_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;addSet_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;build_create_btn.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>156, 81</value>
+  </data>
+  <data name="&gt;&gt;reset_btn.Name" xml:space="preserve">
+    <value>reset_btn</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;previewListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataFile_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="selectListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 122</value>
+  </data>
+  <data name="allSet_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;reset_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="dataFileLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="previewListBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 5, 6, 5</value>
+  </data>
+  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
+    <value>textBox2</value>
+  </data>
+  <data name="excelBrowser_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>757, 26</value>
+  </data>
+  <data name="excelPathTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 26</value>
+  </data>
+  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="addSet_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 364</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 0, 6, 0</value>
+  </data>
+  <data name="&gt;&gt;reset_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;reset_btn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;csFile_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>zh-CN</value>
+  </metadata>
+</root>

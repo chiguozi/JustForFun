@@ -1,0 +1,7 @@
+local p_guild_base=ProtoManager.Descriptor('p_guild_base')
+p_guild_base:AddField('id','uint32' )
+p_guild_base:AddField('name','string' )
+p_guild_base:AddField('owner_id','uint32' )
+p_guild_base:AddField('owner_name','string' )
+p_guild_base:AddField('guild_icon','string' )
+p_guild_base:AddField('announcement','string' )

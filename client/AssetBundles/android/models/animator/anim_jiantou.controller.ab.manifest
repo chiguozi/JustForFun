@@ -1,0 +1,19 @@
+ManifestFileVersion: 0
+CRC: 3166243026
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 838633931a1204002c315b51e332d6fe
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e24db83fdc2550b1615669a08e4339fa
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+Assets:
+- Assets/Models/Animator/anim_jiantou.controller
+Dependencies:
+- F:/Code/ChessProj/QP/AssetBundles/android/models/fbx/jiantou.fbx.ab

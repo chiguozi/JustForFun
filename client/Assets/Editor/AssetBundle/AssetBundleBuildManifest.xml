@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AssetBundle>
+	<Group name="config" folders="Config">
+		<Build mode="Folder" formats="Text" deep="true"/>
+	</Group>
+  <Group name="ui" folders="UI">
+    <Build mode="File" formats="Prefab" deep="false"/>
+  </Group>
+  <Group name="model" folders="Models">
+    <Build mode="File" formats="Prefab" deep="false" depth="1"/>
+    <Build mode="File" formats="Model,Controller,Material,Texture" deep="true" depth="-1"/>
+  </Group>
+  <Group name="effect" folders="Effects">
+    <Build mode="File" formats="Prefab,Model,Controller,Material,Texture" deep="false" depth="1"/>
+  </Group>
+  <Group name="shader" folders="Shaders">
+    <Build mode="Folder" formats="Shader" deep="true" depth="1"/>
+  </Group>
+</AssetBundle>
