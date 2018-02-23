@@ -22,7 +22,6 @@
 *.la
 
 # Executables
-*.exe
 *.out
 *.app
 *.opendb
@@ -35,7 +34,7 @@
 *.user
 *.suo
 
-[Dd]ebug/
+Debug/
 [Rr]elease/
 [Rr]eleases/
 *.VC.db
