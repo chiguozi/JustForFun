@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1588889442
+CRC: 4093852625
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 6bc799ff0e154ac624a729316784063d
+    Hash: a40c114ff576cf4f463c400308223887
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 02689407958b3b99319348c541dc5079
+    Hash: 7b3e506932349f67a7c4cb6d46637ab0
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -21,9 +21,9 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 43
   Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
 Assets:
 - Assets/Models/Prefab/mahjongtiles.prefab
 Dependencies:
-- F:/Code/ChessProj/QP/AssetBundles/android/models/fbx/all.fbx.ab
-- F:/Code/ChessProj/QP/AssetBundles/android/models/fbx/mahjong.fbx.ab
-- F:/Code/ChessProj/QP/AssetBundles/android/models/materials/mj_hand.mat.ab
+- E:/UnityProject/myGit/JustForFun/client/AssetBundles/android/models/fbx/all.fbx.ab

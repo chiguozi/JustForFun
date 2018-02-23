@@ -3,7 +3,7 @@ CRC: 3166243026
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 838633931a1204002c315b51e332d6fe
+    Hash: 56755820001225fab23f222642501607
   TypeTreeHash:
     serializedVersion: 2
     Hash: e24db83fdc2550b1615669a08e4339fa
@@ -16,4 +16,4 @@ ClassTypes:
 Assets:
 - Assets/Models/Animator/anim_jiantou.controller
 Dependencies:
-- F:/Code/ChessProj/QP/AssetBundles/android/models/fbx/jiantou.fbx.ab
+- E:/UnityProject/myGit/JustForFun/client/AssetBundles/android/models/fbx/jiantou.fbx.ab

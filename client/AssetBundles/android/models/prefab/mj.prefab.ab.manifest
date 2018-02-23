@@ -3,7 +3,7 @@ CRC: 3985628066
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: f9d2a6b576a5c1198f2a0e3a0ad539c4
+    Hash: 3b436b7303074d732bf15378bb84c13e
   TypeTreeHash:
     serializedVersion: 2
     Hash: 424169e0d9b20c4dc06325ceef846dc3
@@ -32,9 +32,9 @@ ClassTypes:
 Assets:
 - Assets/Models/Prefab/mj.prefab
 Dependencies:
-- F:/Code/ChessProj/QP/AssetBundles/android/models/fbx/mahjongshadow.fbx.ab
-- F:/Code/ChessProj/QP/AssetBundles/android/models/fbx/all.fbx.ab
-- F:/Code/ChessProj/QP/AssetBundles/android/models/materials/mahjongshadow_.mat.ab
-- F:/Code/ChessProj/QP/AssetBundles/android/models/materials/mj_hand.mat.ab
-- F:/Code/ChessProj/QP/AssetBundles/android/models/texture/icon_02.png.ab
-- F:/Code/ChessProj/QP/AssetBundles/android/models/texture/jin_1.png.ab
+- E:/UnityProject/myGit/JustForFun/client/AssetBundles/android/models/fbx/mahjongshadow.fbx.ab
+- E:/UnityProject/myGit/JustForFun/client/AssetBundles/android/models/fbx/all.fbx.ab
+- E:/UnityProject/myGit/JustForFun/client/AssetBundles/android/models/materials/mahjongshadow_.mat.ab
+- E:/UnityProject/myGit/JustForFun/client/AssetBundles/android/models/materials/mj_hand.mat.ab
+- E:/UnityProject/myGit/JustForFun/client/AssetBundles/android/models/texture/icon_02.png.ab
+- E:/UnityProject/myGit/JustForFun/client/AssetBundles/android/models/texture/jin_1.png.ab

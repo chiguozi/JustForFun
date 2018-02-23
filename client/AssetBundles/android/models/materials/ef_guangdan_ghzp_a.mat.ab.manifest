@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3925296136
+CRC: 2184716430
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 8584dfa6c9bdcad90e842c361e54451a
+    Hash: 1452a90312b1140934175179894d2c71
   TypeTreeHash:
     serializedVersion: 2
     Hash: 8d068741ae817c9b5c92580f37de87e3
@@ -18,4 +18,4 @@ ClassTypes:
 Assets:
 - Assets/Models/Materials/ef_guangdan_ghzp_a.mat
 Dependencies:
-- F:/Code/ChessProj/QP/AssetBundles/android/models/texture/ef_guangdan_ghzp_a.png.ab
+- E:/UnityProject/myGit/JustForFun/client/AssetBundles/android/models/texture/ef_guangdan_ghzp_a.png.ab

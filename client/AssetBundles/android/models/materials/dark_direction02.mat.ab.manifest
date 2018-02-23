@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3886287388
+CRC: 2361381256
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 18da06d2c54a06167f9a10d45c455ea7
+    Hash: 9d19664b2e7bb4a5470fbeaa735fcbd8
   TypeTreeHash:
     serializedVersion: 2
     Hash: 8d068741ae817c9b5c92580f37de87e3
@@ -18,4 +18,4 @@ ClassTypes:
 Assets:
 - Assets/Models/Materials/dark_direction02.mat
 Dependencies:
-- F:/Code/ChessProj/QP/AssetBundles/android/models/texture/direction02.png.ab
+- E:/UnityProject/myGit/JustForFun/client/AssetBundles/android/models/texture/direction02.png.ab

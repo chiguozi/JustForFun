@@ -3,7 +3,7 @@ CRC: 3798937008
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: bcf35c9cec2b470c961b0b3747791e4e
+    Hash: 0bf5f18d3da17a93b1cef70989304ba9
   TypeTreeHash:
     serializedVersion: 2
     Hash: 8d068741ae817c9b5c92580f37de87e3
@@ -18,6 +18,6 @@ ClassTypes:
 Assets:
 - Assets/Models/Materials/jinse_fireA.mat
 Dependencies:
-- F:/Code/ChessProj/QP/AssetBundles/android/models/texture/ef_lianxu_ghz70.png.ab
-- F:/Code/ChessProj/QP/AssetBundles/android/models/texture/noise_wave_000.png.ab
-- F:/Code/ChessProj/QP/AssetBundles/android/shaders.ab
+- E:/UnityProject/myGit/JustForFun/client/AssetBundles/android/models/texture/ef_lianxu_ghz70.png.ab
+- E:/UnityProject/myGit/JustForFun/client/AssetBundles/android/models/texture/noise_wave_000.png.ab
+- E:/UnityProject/myGit/JustForFun/client/AssetBundles/android/shaders.ab

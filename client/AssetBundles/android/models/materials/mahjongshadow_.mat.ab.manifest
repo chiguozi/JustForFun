@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 291592130
+CRC: 1434101262
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 61b6a2ebbc919de4fc1e06732b1fc3ba
+    Hash: 6eb999484a71b4e6e1b541fb62ac81b4
   TypeTreeHash:
     serializedVersion: 2
     Hash: 8d068741ae817c9b5c92580f37de87e3
@@ -18,4 +18,4 @@ ClassTypes:
 Assets:
 - Assets/Models/Materials/MahjongShadow_.mat
 Dependencies:
-- F:/Code/ChessProj/QP/AssetBundles/android/models/texture/mahjongshadow.png.ab
+- E:/UnityProject/myGit/JustForFun/client/AssetBundles/android/models/texture/mahjongshadow.png.ab

@@ -3,7 +3,7 @@ CRC: 3240304277
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 2d3fa38d3c6959e28be0a63528ae3ad0
+    Hash: c423227f2e9b1d169e499e01483f1689
   TypeTreeHash:
     serializedVersion: 2
     Hash: b89a8339825f64aef9ffa0c27aa97500
@@ -34,9 +34,9 @@ ClassTypes:
 Assets:
 - Assets/Models/Prefab/jiantou.prefab
 Dependencies:
-- F:/Code/ChessProj/QP/AssetBundles/android/models/fbx/jiantou.fbx.ab
-- F:/Code/ChessProj/QP/AssetBundles/android/models/animator/anim_jiantou.controller.ab
-- F:/Code/ChessProj/QP/AssetBundles/android/models/materials/ef_guangdan_ghzp_a.mat.ab
-- F:/Code/ChessProj/QP/AssetBundles/android/models/materials/ef_huan_ghz86.mat.ab
-- F:/Code/ChessProj/QP/AssetBundles/android/models/materials/jiantou.mat.ab
-- F:/Code/ChessProj/QP/AssetBundles/android/models/materials/jinse_firea.mat.ab
+- E:/UnityProject/myGit/JustForFun/client/AssetBundles/android/models/fbx/jiantou.fbx.ab
+- E:/UnityProject/myGit/JustForFun/client/AssetBundles/android/models/animator/anim_jiantou.controller.ab
+- E:/UnityProject/myGit/JustForFun/client/AssetBundles/android/models/materials/ef_guangdan_ghzp_a.mat.ab
+- E:/UnityProject/myGit/JustForFun/client/AssetBundles/android/models/materials/ef_huan_ghz86.mat.ab
+- E:/UnityProject/myGit/JustForFun/client/AssetBundles/android/models/materials/jiantou.mat.ab
+- E:/UnityProject/myGit/JustForFun/client/AssetBundles/android/models/materials/jinse_firea.mat.ab

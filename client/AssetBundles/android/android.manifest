@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 2977695137
+CRC: 4041212821
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -230,5 +230,3 @@ AssetBundleManifest:
       Name: models/prefab/mahjongtiles.prefab.ab
       Dependencies:
         Dependency_0: models/fbx/all.fbx.ab
-        Dependency_1: models/fbx/mahjong.fbx.ab
-        Dependency_2: models/materials/mj_hand.mat.ab

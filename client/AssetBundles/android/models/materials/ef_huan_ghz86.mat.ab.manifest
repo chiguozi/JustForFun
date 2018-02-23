@@ -3,7 +3,7 @@ CRC: 1243483924
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: ac7c89db41a428dc19ab805bbefe4d35
+    Hash: 8d75c867bbe51d7c39e50b5b992d6da5
   TypeTreeHash:
     serializedVersion: 2
     Hash: 8d068741ae817c9b5c92580f37de87e3
@@ -18,4 +18,4 @@ ClassTypes:
 Assets:
 - Assets/Models/Materials/ef_huan_ghz86.mat
 Dependencies:
-- F:/Code/ChessProj/QP/AssetBundles/android/models/texture/ef_huan_ghz86.png.ab
+- E:/UnityProject/myGit/JustForFun/client/AssetBundles/android/models/texture/ef_huan_ghz86.png.ab

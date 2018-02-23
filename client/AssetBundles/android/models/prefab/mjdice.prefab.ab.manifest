@@ -3,7 +3,7 @@ CRC: 449864536
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 4d9b64c57cc4a8c7d45e041f5795f0b5
+    Hash: 9351ec4214c861ebce99efe67ae110ee
   TypeTreeHash:
     serializedVersion: 2
     Hash: 02689407958b3b99319348c541dc5079
@@ -24,5 +24,5 @@ ClassTypes:
 Assets:
 - Assets/Models/Prefab/mjdice.prefab
 Dependencies:
-- F:/Code/ChessProj/QP/AssetBundles/android/models/fbx/mahjong.fbx.ab
-- F:/Code/ChessProj/QP/AssetBundles/android/models/materials/dice.mat.ab
+- E:/UnityProject/myGit/JustForFun/client/AssetBundles/android/models/fbx/mahjong.fbx.ab
+- E:/UnityProject/myGit/JustForFun/client/AssetBundles/android/models/materials/dice.mat.ab

@@ -3,7 +3,7 @@ CRC: 126485820
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: de459143e2adf0aeeabcc71d8f1dccb3
+    Hash: 431af7586b5d14142263bf71b813f3b1
   TypeTreeHash:
     serializedVersion: 2
     Hash: 8d068741ae817c9b5c92580f37de87e3
@@ -18,4 +18,4 @@ ClassTypes:
 Assets:
 - Assets/Models/Materials/dark_direction04.mat
 Dependencies:
-- F:/Code/ChessProj/QP/AssetBundles/android/models/texture/direction04.png.ab
+- E:/UnityProject/myGit/JustForFun/client/AssetBundles/android/models/texture/direction04.png.ab
