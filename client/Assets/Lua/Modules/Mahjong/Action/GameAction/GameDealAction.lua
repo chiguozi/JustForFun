@@ -25,7 +25,7 @@ function GameDealAction:SendAllHandCards(cards, callback)
 		for i = 1, #circleCountList do
 			for j = 1, playerNum do
 				--@todo  从庄先发牌
-				local viewSeat = PlayerSeatTool.GetViewSeat(i)
+				local viewSeat = PlayerSeatTool.GetViewSeat(j)
 				local cardCount = circleCountList[i][j]
 				if cardCount ~= nil then
 					for k = 1, cardCount do
