@@ -1,6 +1,7 @@
 local CmdManager = {}
 local GameEventManager = GameEventManager
 local GameEventEnum = GameEventEnum
+local GameLoop = GameLoop
 
 local _cmdQueue = require("Framework/Collections/Queue"):create()
 local _noWaitQueue = {}
@@ -14,7 +15,11 @@ local _lockCount = 0
 local _lockMap = {}
 
 function CmdManager.Start()
-	_enable = true
+	GameLoop.EnableLoop("CmdManager")
+end
+
+function CmdManager.Stop()
+	GameLoop.DisableLoop("CmdManager")
 end
 
 function CmdManager.CheckNeedInQueue(id)
@@ -76,10 +81,6 @@ function CmdManager.Init()
 end
 
 function CmdManager.Update()
-	if not _enable then
-		return
-	end
-
 	if #_noWaitQueue > 0 then
 		for i = 1, #_noWaitQueue do
 			CmdManager.SendGameEvent(_noWaitQueue[i])
@@ -99,7 +100,6 @@ end
 
 --@todo  添加执行时间检测
 function CmdManager.SendGameEvent(msg)
-	LogError("send", msg.id)
 	GameEventManager.SendEvent(GameEventEnum.CMD_HANDLE_MSG, msg.id, msg)
 end
 
@@ -108,7 +108,6 @@ end
 
 -- 反注册事件？
 function CmdManager.Release()
-	_enable = false
 	GameEventManager.RemoveEvent(GameEventEnum.CMD_ADD_LOCK, CmdManager.OnAddLock)
 	GameEventManager.RemoveEvent(GameEventEnum.CMD_REMOVE_LOCK, CmdManager.OnRemoveLock)
 end

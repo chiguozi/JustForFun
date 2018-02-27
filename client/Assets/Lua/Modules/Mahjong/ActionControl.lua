@@ -63,7 +63,6 @@ end
 
 
 function ActionControl:CheckCommandVaild(command)
-	LogError(command, self.commandCfg[command])
 	if self.commandCfg == nil or self.commandCfg[command] == nil then
 		return false
 	end

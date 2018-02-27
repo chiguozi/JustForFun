@@ -1,13 +1,14 @@
 require("Starter/SetupAPI")
 local NetManager = NetManager
 function OnTick()
-	NetManager.Update()
+	--NetManager.Update()
+	GameLoop.Update()
 end
 --主入口函数。从这里开始lua逻辑
 function Main()					
 	print("logic start")	 		
 	require("Starter/GameStarter")
-	UpdateBeat:AddListener(UpdateBeat:CreateListener(OnTick))	
+	UpdateBeat:Add(OnTick)
 	UIManager:Init()
 end
 

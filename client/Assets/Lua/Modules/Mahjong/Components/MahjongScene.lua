@@ -61,7 +61,6 @@ function MahjongScene:InitMjMesh(info, obj)
 
     CmdManager.AddMsgToQuque({["id"] ="gamestart"})
     CmdManager.AddMsgToQuque({["id"] = "gamedeal"})
-    UpdateBeat:Add(CmdManager.Update)
     CmdManager.Init()
     coroutine.start(function() 
     	coroutine.wait(1)

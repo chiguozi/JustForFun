@@ -24,7 +24,6 @@ function MahjongControl:InitActionCtrl()
 end
 
 function MahjongControl:OnHandleMsg(key, cmd, msg)
-	LogError("receive",cmd, msg)
 	self.actionCtrl:ExecuteCommand(cmd, msg)
 end
 

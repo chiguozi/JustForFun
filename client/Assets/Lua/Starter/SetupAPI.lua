@@ -51,7 +51,7 @@ ViewManifest = require("Common/Define/ViewManifest")
 URLConfig = require("Common/Asset/URLConfig")
 SectionEnum = require("Common/Define/SectionEnum")
 
-
+GameLoop = require("Framework/GameCore/GameLoop")
 
 AssetManager.SetAssetConfig(require("Common/Asset/AssetConfig")) 
 ProtoManager = require("Framework/Network/ProtoManager")
