@@ -34,7 +34,7 @@
 *.user
 *.suo
 
-Debug/  
+[D]ebug/  
 [Rr]elease/
 [Rr]eleases/
 *.VC.db

@@ -8,6 +8,10 @@ local EventEnum =
 	Disconnected = 102,--与服务器断开连接
 	Login = 103,--登录上服务器
 	LoginOut = 104,--登出服务器
+
+
+	MouseBtnUp = 201,  -- 鼠标抬起
+	MouseBtnDown = 202, -- 鼠标按下
 }
 
 return EventEnum

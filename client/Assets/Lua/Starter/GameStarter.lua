@@ -17,7 +17,7 @@ end
 
 function GameStarter.RegistLoops()
 	GameLoop.RegistLoop("NetManager", NetManager, true)
-	GameLoop.RegistLoop("CmdManager", CmdManager, false)
+	GameLoop.RegistLoop("InputManager", InputManager, true)
 	GameLoop.RegistLoop("CmdManager", CmdManager, false)
 end
 

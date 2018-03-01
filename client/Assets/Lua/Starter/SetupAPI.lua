@@ -57,6 +57,7 @@ AssetManager.SetAssetConfig(require("Common/Asset/AssetConfig"))
 ProtoManager = require("Framework/Network/ProtoManager")
 NetManager = require("Framework/Network/NetManager")
 UIManager = require("Framework/UI/UIManager").new()
+InputManager = require("Framework/GameCore/InputManager")
 CmdManager = require("Framework/GameCore/CmdManager")
 
 
