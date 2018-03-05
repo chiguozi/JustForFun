@@ -10,7 +10,7 @@ function GameLoop.RegistLoop(key, loop, enabled, needSelf)
 	if UpdateKeyMap[key] ~= nil then
 		return
 	end
-
+	
 	if loop.Update == nil or type(loop.Update) ~= "function" then
 		return
 	end

@@ -63,15 +63,6 @@ end
 -- 检测最后一张牌是否需要偏移  
 function MjPlayer:IsLastCardNeedOffset(handCount)
 	return handCount % 3 == 2
-	-- local maxCount = self.scene.config.MahjongHandCount
-	-- while maxCount > 0 do
-	-- 	if handCount == maxCount then
-	-- 		return true
-	-- 	else
-	-- 		maxCount = maxCount - 3
-	-- 	end
-	-- end
-	-- return false
 end
 
 

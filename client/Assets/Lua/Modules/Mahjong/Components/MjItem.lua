@@ -26,9 +26,11 @@ function MjItem:ctor(go, scene)
 	self.isSelect = false  				-- 是否选中
 	self.isActive = false  				-- 是否显示
 	self.state = MahjongItemState.Hide
-	self.value = nil					-- 牌子值
-	self.sortValue = nil 				-- 逻辑值  备用 用于对
+	self.value = nil					-- 牌子值 对应mesh和显示
+	self.sortValue = nil 				-- 逻辑值  备用 白板对应任意牌
 	self.isFront = false				-- 是否是正面
+
+	self.index  = 0  					-- 手牌的位置，用于排序
 
 	self.width = MahjongDefine.MjWidth
 	self.height = MahjongDefine.MjHeight
@@ -128,6 +130,7 @@ function MjItem:SetValue(value)
 		return
 	end
 	self.value = value
+	self.sortValue = value
 	-- 设置mesh
 	self.modelCfg= ConfigManager.GetConfig("CfgModel", value)
 	if self.modelCfg == nil then
